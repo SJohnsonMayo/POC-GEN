@@ -1,0 +1,6 @@
+This is the only way I can get this to run to completion at this time, but it will run. 
+
+sudo docker run -v /mnt/a967c2b9-3122-48de-a556-556366f5838b/fast5/:/inputs/fast5 -it 8907e1c9bc5c /bin/bash
+python ../../SquiggleNet/inference.py -m ../../SquiggleNet/models/model_B4t2_3000_tot32.ckpt -i . -o ../../squigglenet_out/ -b 10000
+
+
